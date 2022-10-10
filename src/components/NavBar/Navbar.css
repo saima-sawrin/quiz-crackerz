@@ -1,0 +1,19 @@
+.header{
+    background-color: #0A192F;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+    margin-left: 20px;
+}
+#link a{
+  text-decoration: none;
+  color: #A24177;
+  margin-right: 20px; 
+  
+} 
+
+nav{
+     box-shadow: 5px 10px #ebeef4;
+     width: 100%;
+}
