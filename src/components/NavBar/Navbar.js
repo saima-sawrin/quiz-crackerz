@@ -1,11 +1,12 @@
-import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link} from 'react-router-dom';
 import './Navbar.css';
 import { BeakerIcon } from '@heroicons/react/24/solid'
 import Topics from '../Topics/Topics';
 import Courses from '../Courses/Courses';
+import { Bars3Icon , XMarkIcon} from '@heroicons/react/24/solid';
 const Navbar = () => {
-
+  
     return (
     <div>
             <nav className='d-flex justify-content-between '>
@@ -21,8 +22,9 @@ const Navbar = () => {
           <Link to={'/blog'}>Blog</Link>
         
         </div>
+
         </nav>
-        <div>
+        <div className='Header'>
           <div className='container'>
           <img src="" alt="" />
           <h1>Free online courses to <br /> achieve your goals</h1>
