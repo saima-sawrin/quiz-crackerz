@@ -7,7 +7,7 @@ const Topics = () => {
   const Courses = useLoaderData([0]);
 
     return (
-        <div className='courses ms-5 me-5 py-4'>
+        <div id='topics' className='courses ms-5 me-5 py-4'>
          
           {
             Courses.data.map(course => <Course

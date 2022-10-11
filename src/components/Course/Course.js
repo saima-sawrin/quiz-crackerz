@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
+import Quizes from '../Quiz/Quizes';
 import './Course.css';
 const Course = ({course}) => {
-    const{name , logo , total} = course;
+    const{id,name , logo , total} = course;
     const [quiz, setQuiz] = useState();
-    const handleQuiz = () =>{
-      setQuiz('../Quiz/Quiz')
+    const navigate = useNavigate();
+    const handleNavigate = () =>{
+    navigate(`quiz/${id}`)
     }
     return (
        
@@ -18,12 +21,11 @@ const Course = ({course}) => {
         <Card.Text>
         Total Quiz:{total}
         </Card.Text>
-        <Button onClick={()=>{handleQuiz()}} variant="primary">Start Practice</Button>
+      
+        <Button onClick={()=> handleNavigate()} variant="primary">Start Practice</Button>
       </Card.Body>
     </Card>
-    <div>
-
-    </div>
+    
    </div>
     
     );

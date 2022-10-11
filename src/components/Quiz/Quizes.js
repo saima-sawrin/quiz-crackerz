@@ -4,10 +4,10 @@ import Quiz from './Quiz';
 import './Quizes.css';
 const Quizes = () => {
     const quizes = useLoaderData([0]);
-    console.log(quizes.data.questions);
+    console.log(quizes.data);
     return (
         <div>
-            <h1>total : {quizes.data.questions.length} </h1>
+            <h1>Quiz of Javascript </h1>
           {
             quizes.data.questions.map(quiz => <Quiz
             key={quiz.id}

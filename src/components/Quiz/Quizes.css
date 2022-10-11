@@ -1,0 +1,11 @@
+.quiz-container{
+    border: 1px solid black;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+.options{
+  justify-items: left;
+}

@@ -34,7 +34,8 @@ const Navbar = () => {
           <p>
           If you’re new  to online <br /> learning and not sure where to start, you’re not <br /> alone. We’ve           curated a free collection of courses for professionals. <br /> Take one of these courses and           learn new skills (on us).
           </p>
-          <button className='py-2 px-3'>Take Free Course</button>
+          <button className='py-2 px-3 '><a href="#topics" className='text-white text-decoration-none'>Take Free Course</a>
+          </button>
          
         </div>
     
