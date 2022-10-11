@@ -9,3 +9,11 @@
 .options{
   justify-items: left;
 }
+.icon{
+    height: 30px;
+    width: 30px;
+    text-align: right;
+    align-items: flex-end;
+    margin-left: 90%;
+   color: blue;
+}
