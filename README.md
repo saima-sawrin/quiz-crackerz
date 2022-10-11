@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Project Name : Placemaking Education Website
+
+working steps:
+
+1. Create different component
+2. CreateBrowserRouter in Router.js file and connect it by RouterProvider in (App.js)
+3. Declared common component and <Outlet> in main.js
+4. useNavigate hook in practice button for loading different quiz pages
+5. fetch api data by using loader

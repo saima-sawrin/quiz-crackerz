@@ -7,7 +7,7 @@ const Quizes = () => {
     console.log(quizes.data);
     return (
         <div>
-            <h1>Quiz of Javascript </h1>
+            <h2 className='my-3'>Quiz of {quizes.data.name}</h2>
           {
             quizes.data.questions.map(quiz => <Quiz
             key={quiz.id}
