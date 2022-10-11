@@ -6,11 +6,9 @@ import './Topics.css';
 const Topics = () => {
   const Courses = useLoaderData([0]);
 
- 
-
     return (
-        <div>
-          <h1>total : {Courses.data.length} </h1>
+        <div className='courses ms-5 me-5 py-4'>
+         
           {
             Courses.data.map(course => <Course
             key={course.id}

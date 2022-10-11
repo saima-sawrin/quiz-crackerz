@@ -20,6 +20,7 @@ const Navbar = () => {
           <Link to={'/'} >Topics</Link>
           <Link to={'/statistics'} >Statistics</Link>
           <Link to={'/blog'}>Blog</Link>
+          <Link to={'/quiz'}></Link>
         
         </div>
 
