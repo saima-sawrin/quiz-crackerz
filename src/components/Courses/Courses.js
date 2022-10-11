@@ -4,12 +4,12 @@ import { useLoaderData } from 'react-router-dom';
 import Course from '../Course/Course';
 
 const Courses = () => {
+//  const{name} = course;
 
-   
     return (
         <div>
-          
-        <Course></Course>
+          <h1>name: </h1>
+  
         </div>
     );
 };

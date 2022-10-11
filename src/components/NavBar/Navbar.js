@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './Navbar.css';
 import { BeakerIcon } from '@heroicons/react/24/solid'
-import Home from '../Home/Home';
+import Topics from '../Topics/Topics';
 import Courses from '../Courses/Courses';
 const Navbar = () => {
-    const cart = useLoaderData();
+
     return (
     <div>
             <nav className='d-flex justify-content-between '>
@@ -16,20 +16,34 @@ const Navbar = () => {
            alt="React Bootstrap logo"/>
         </div>
         <div id='link' className=' my-3 me-4'>
-        
           <Link to={'/'} >Topics</Link>
-          <Link to={'/'} >Statistics</Link>
-          <Link to={'/'}>Blog</Link>
+          <Link to={'/statistics'} >Statistics</Link>
+          <Link to={'/blog'}>Blog</Link>
         
         </div>
-        <h2>Total:{cart.length}</h2>
-     </nav>
-     <div className='HomeContainer'>
-     <Home></Home>
-     </div>
-      <div>
-        <Courses></Courses>
-      </div>
+        </nav>
+        <div>
+          <div className='container'>
+          <img src="" alt="" />
+          <h1>Free online courses to <br /> achieve your goals</h1>
+          <p className='mt-3'>Looking to add new skills? Is there a hobby you’ve wanted to try? We’re PlaceMaking Edu, <br /> a leading destination for learning and teaching online. 
+          </p>
+          <p>
+          If you’re new  to online <br /> learning and not sure where to start, you’re not <br /> alone. We’ve           curated a free collection of courses for professionals. <br /> Take one of these courses and           learn new skills (on us).
+          </p>
+          <button className='py-2 px-3'>Take Free Course</button>
+         
+        </div>
+    
+ 
+  
+       
+        </div>
+       
+     
+     
+  
+    
     </div>
     );
 };

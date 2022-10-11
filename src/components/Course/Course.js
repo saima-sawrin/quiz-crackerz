@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Course = () => {
-    
+const Course = ({course}) => {
+    const{name} = course;
     return (
         <div>
-           
+           <h1>{name}</h1>
         </div>
     );
 };
