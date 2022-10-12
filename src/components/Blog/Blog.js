@@ -3,9 +3,9 @@ import { Accordion } from 'react-bootstrap';
 import './Blog.css';
 const Blog = () => {
     return (
-        <div>
+        <div id='blog' >
             <h1>Blog</h1>
-            <Accordion defaultActiveKey="0">
+            <Accordion className='accordion' defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>What is the purpose of react router?</Accordion.Header>
         <Accordion.Body>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Link = ({route}) => {
     return (
-      <li><a href={route.path}>{route.Name}</a></li>
+      <li className='mt-4' ><a href={route.path}>{route.Name}</a></li>
     );
 };
 

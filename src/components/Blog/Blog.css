@@ -1,0 +1,12 @@
+@media only screen and  (max-width:688px) {
+    #blog{
+    overflow: hidden;
+    width: 80%;
+    margin-left: 5%;
+    }
+    .accordion{
+      overflow: hidden;
+      overflow-x: hidden;
+      width: 100%;
+    }
+}

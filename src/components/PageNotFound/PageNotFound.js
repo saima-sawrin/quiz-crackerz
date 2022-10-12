@@ -4,10 +4,10 @@ const PageNotFound = () => {
     return (
   
        <div className='error'>
-        <img
-           src="/error1.jpg"
-           
-           alt="React Bootstrap logo"/>
+        <a href="http://localhost:3000/"><img
+           src="/404.jpg"
+          alt="React Bootstrap logo" /></a>
+
         </div>
     
      

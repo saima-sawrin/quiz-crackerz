@@ -2,3 +2,6 @@
     display: grid;
    grid-template-columns: repeat(3 , 1fr);
 } */
+#card{
+    background-color: rgb(222, 248, 248);
+}

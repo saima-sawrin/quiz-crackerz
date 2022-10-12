@@ -2,21 +2,40 @@
 .logo {
     margin-left: 20px;
 }
-#link a{
+#navLink a{
+  text-decoration: none;
+  color: #d766a4;
+  margin-right: 20px; 
+  padding: 5px;
+  border: 0px;
+} 
+
+#navLink a:hover{
+  background-color: #A24177;
+  color: #ebeef4;
+  padding: 5px;
+  border: 0px;
+}
+#navLink a:active{
+  color: #6c1244;
+}
+
+.nav{
+     box-shadow: 5px 10px #ebeef4;
+
+}
+#navLink{
+  margin-top: 0%;
+  margin-top: px;
+
+}
+#menu{
   text-decoration: none;
   color: #A24177;
   margin-right: 20px; 
-  
-} 
-#link a:active{
-  background-color: #A24177;
-  color: #ebeef4;
+  padding: 5px;
+  border: 0px;
 }
-nav{
-     box-shadow: 5px 10px #ebeef4;
-     width: 100%;
-}
-
 
 /* .container h1{
     font-family: 'Arimo', sans-serif;
@@ -24,3 +43,12 @@ nav{
     font-size: larger;
 
 } */
+@media only screen and  (max-width:688px) {
+  .nav{
+    overflow: hidden;
+    width: 100%;
+  }
+#navLink{
+  margin-right: 5%;
+}
+}

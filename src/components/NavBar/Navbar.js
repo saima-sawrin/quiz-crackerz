@@ -16,7 +16,7 @@ const Navbar = () => {
       {id:4 , path: '/quiz'}
   ]
     return (
-    <div>
+    <div  id='navBar'>
             {/* <nav className='d-flex justify-content-between  '>
         <div className=' logo my-3'>
         <img
@@ -34,7 +34,7 @@ const Navbar = () => {
 
         </nav> */}
 
-<nav className='d-flex justify-content-between ' >
+<nav className='flex justify-content-between ' >
        <div className=' logo my-3 '>
         <img
            src="/logo.jpg"
@@ -48,10 +48,10 @@ const Navbar = () => {
         }
         </div>
        
-        <ul  className= {`md:flex justify-center gap-5 mt-4 ms-5  md:static absolute duration-300 ease-in w-full ${open? 'top-6' : 'top-[-120px]'  }`}>
+        <ul id='navLink' className= {`md:flex justify-center gap-5  ms-5  md:static absolute duration-300 ease-in w-full ${open? 'top-6' : 'top-[-120px]'  }`}>
             {
             
-              routes.map(route => <Link id='link' route={route} key={route.id}></Link>)
+              routes.map(route => <Link  route={route} key={route.id}></Link>)
                    
             }
         </ul>

@@ -6,13 +6,14 @@ import {  EyeIcon} from '@heroicons/react/24/solid';
 import './Quizes.css';
 const Quiz = ({quiz}) => {
     const{question , options , correctAnswer} = quiz;
-    console.log(quiz);
+    // console.log(quiz);
     const [ans , setAns] = useState([]);
-    const handleCorrectAnswer = correctAnswer =>{
+    const handleCorrectAnswer = () =>{
    
-        const correct = ans.find(ca => ca.target.value === correctAnswer)
+        const correct = ans.map(ca => ca.target.value === correctAnswer)
+    
         if(correct){
-        setAns(correct);
+       
         toast("Right answer");
         
         }
