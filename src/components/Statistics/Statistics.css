@@ -1,9 +1,18 @@
 .chart{
-
+     display: grid;
+    grid-column: 1fr 1fr;
     justify-content: center;
     align-items: center;
 
-    margin-left: 12%;
+
     margin-top: 4%;
 
+}
+@media only screen and  (max-width:688px) {
+    .chart{
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-column: 1fr 1fr;
+    }
 }

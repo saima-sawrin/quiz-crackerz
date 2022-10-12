@@ -23,7 +23,7 @@ const Statistics = () => {
       
 return (
         <div className='chart'>
-         <LineChart width={800} height={400} data={data}>
+         <LineChart className='linechart' width={600} height={400} data={data}>
             <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
