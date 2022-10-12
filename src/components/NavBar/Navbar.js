@@ -8,6 +8,7 @@ import Courses from '../Haeder/Header';
 import Header from '../Haeder/Header';
 const Navbar = () => {
   const [open , setOpen] = useState(true);
+
   const routes = [
       {id:1, Name: 'Topics' , path: '/'},
       {id:2, Name: 'Statistics' , path: '/statistics'},
@@ -27,7 +28,7 @@ const Navbar = () => {
            alt="React Bootstrap logo"/>
         </div>
 
-        <div onClick={ ()=> setOpen(!open)} className='h-6 w-6 text-white-400 md:hidden'>
+        <div onClick={ ()=> setOpen(!open)} className='h-6 w-6 md:mt-3 md:hidden'>
         {
             open ?  <XMarkIcon/> : <Bars3Icon/>
         }
