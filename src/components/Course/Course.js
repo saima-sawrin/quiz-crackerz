@@ -14,7 +14,7 @@ const Course = ({course}) => {
        
    <div className="cart">
 
-<Card  style={{ width: '22rem' , margin:'10px'  }}>
+<Card  style={{ width: '20rem' , }}>
       <Card.Img variant="top" src={logo}/>
       <Card.Body>
         <Card.Title>{name}</Card.Title>

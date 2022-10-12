@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../components/Blog/Blog";
-import Courses from "../components/Courses/Courses";
 import Topics from "../components/Topics/Topics";
-import Navbar from "../components/NavBar/Navbar";
 import Statistics from "../components/Statistics/Statistics";
 import Main from './Main';
 import Quiz from "../components/Quiz/Quizes";
+import PageNotFound from "../components/PageNotFound/PageNotFound";
 
 const router = createBrowserRouter([
     {
@@ -40,19 +39,14 @@ const router = createBrowserRouter([
                 
              },
 
-        ]
-
+        ],
+      
     
       },
-     
+     {
+        path:'*',
+        element:<PageNotFound></PageNotFound>
+     }
 
-    
-    // {
-    //     path:'/country/:name',
-    //     loader: async({params}) =>{
-    //       return fetch(`https://restcountries.com/v3.1/name/${params.name}`)
-    //     },
-    //     element: <Country></Country>
-    // }
 ]);
 export default router;
