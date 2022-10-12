@@ -32,8 +32,7 @@ return (
           <Line type="monotone" dataKey="name" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="total" stroke="#82ca9d" />
           </LineChart>
-           
-
+    
         </div>
     );
 

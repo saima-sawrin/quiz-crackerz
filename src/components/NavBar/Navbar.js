@@ -16,23 +16,8 @@ const Navbar = () => {
       {id:4 , path: '/quiz'}
   ]
     return (
-    <div  id='navBar'>
-            {/* <nav className='d-flex justify-content-between  '>
-        <div className=' logo my-3'>
-        <img
-           src="/logo.jpg"
-           className="d-inline-block align-top ms-4"
-           alt="React Bootstrap logo"/>
-        </div>
-        <div id='link' className=' my-3 me-4'>
-          <Link to={'/'} >Topics</Link>
-          <Link to={'/statistics'} >Statistics</Link>
-          <Link to={'/blog'}>Blog</Link>
-          <Link to={'/quiz'}></Link>
-        
-        </div>
-
-        </nav> */}
+    <div  id='navBar' >
+      
 
 <nav className='flex justify-content-between ' >
        <div className=' logo my-3 '>
@@ -42,16 +27,16 @@ const Navbar = () => {
            alt="React Bootstrap logo"/>
         </div>
 
-        <div id='link' onClick={ ()=> setOpen(!open)} className='h-6 w-6 text-white-400 md:hidden'>
+        <div onClick={ ()=> setOpen(!open)} className='h-6 w-6 text-white-400 md:hidden'>
         {
             open ?  <XMarkIcon/> : <Bars3Icon/>
         }
         </div>
        
-        <ul id='navLink' className= {`md:flex justify-center gap-5  ms-5  md:static absolute duration-300 ease-in w-full ${open? 'top-6' : 'top-[-120px]'  }`}>
+        <ul id='navLink' className= {`md:flex justify-center gap-5 md:static absolute duration-300 ease-in w-full ${open? 'top-4' : 'top-[-150px]'  }`}>
             {
             
-              routes.map(route => <Link  route={route} key={route.id}></Link>)
+              routes.map(route => <Link route={route} key={route.id}></Link>)
                    
             }
         </ul>
